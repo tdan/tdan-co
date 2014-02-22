@@ -37,53 +37,55 @@
 	<link rel="apple-touch-icon" href="{{ media_url('/apple-touch-icon.png') }}">
 	{% endblock favicons %}
 
-	{% block css %}
 	<link rel="stylesheet" type="text/css" href="{{ media_url('css/normalize.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ media_url('css/grid.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ media_url('css/style.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ media_url('css/syntax.css') }}">
-	{% endblock css %}
+	{% block extra_css %}
+	{% endblock extra_css %}
 
 	{% block headjs %}
 	<!-- All JavaScript at the bottom, except for Modernizr which
 				enables HTML5 elements & feature detects -->
 	{% endblock headjs %}
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
 	{% block endhead %}{% endblock endhead %}
 </head>
-<body id="{{ resource.meta.id if resource.meta.id else resource.slug }}">
-	{% block content %}
-	<div id="container">
+<body>
+	<div class="container clearfix">
 		{% block container %}
+		<div class="header">
+			{% block header %}
+			{% endblock %}
+		</div>
+		<!-- end header -->
+		<div class="content">
+			{% block content %}
+			{% endblock %}
+		</div>
+		<!-- end content -->
+		<div class="footer">
+			{% block footer %}
+			{% endblock %}
+		</div>
+		<!-- end footer -->
 		{% endblock container %}
 	</div> 
-	<!-- end of #container -->
 	
-	<footer>
-		{% block footer %}
-		{% endblock %}
-	</footer>
-	<!-- end footer -->
-	{% endblock content%}
-	
-	{% block js %}
-	<!-- Javascript at the bottom for fast page loading -->
-	{% block jquery %}
-	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
-	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.11.0.min.js">\x3C/script>')</script>
-	{% endblock jquery %}
-
-	{% block scripts %}
-	{% endblock scripts %}
-
-
 	<!--[if lt IE 7 ]>
 		<script src="js/libs/dd_belatedpng.js"></script>
 		<script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
 	<![endif]-->
+	
+	<!-- Javascript at the bottom for fast page loading -->
+	{% block js %}
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.11.0.min.js">\x3C/script>')</script>
 
-	{% block analytics %}
-	{% include "analytics.j2" %}
-	{% endblock analytics %}
+	{% if site.config.mode == "production" -%}
+		{% include "analytics.j2" %}
+	{%- endif %}
 
 	{% endblock js %}
 </body>

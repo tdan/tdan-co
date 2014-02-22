@@ -1,0 +1,21 @@
+{% extends "base.j2" %}
+
+{% block header %}
+<nav>
+	<a href="/">Home</a>
+	<span class="seperator">/</span>
+	<a href="/blog/">Blog</a>
+	<span class="seperator">/</span>
+	<a href="/archives/">Archives</a>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="grid column-half" 
+	<div class="blog-content">
+		{% block blog-content %}
+		{% endblock %}
+	</div>
+</div>
+{% endblock %}
+

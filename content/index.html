@@ -1,12 +1,21 @@
 {% extends "base.j2" %}
 
-{% block endhead %}
-	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
-{% endblock %}
-
-{% block container %}
-{% filter markdown %}
-Hello, This is a test for Hyde
-=============================
-{% endfilter %}
+{% block content %}
+<div class="grid">
+<div class="column-1-3">
+	<div class="profile-pic">
+		<img src="{{ media_url('images/8bit-avatar.png') }}" width="140" height="50" />
+	</div>
+	<div class="menu side">
+		<ul>
+			<li><a href="/blog/">Blog</a></li>
+			<li><a href="#">Resume</a></li>
+			<li><a href="#">Projects</a></li>
+		</ul>
+	</div>
+</div>
+<div class="column-2-3 push-right" id="about">
+	{% include "about.html" %}
+</div>
+</div>
 {% endblock %}

@@ -25,8 +25,11 @@ context:
                 type: node
                 url: blog
 meta:
-    nodemeta: meta.yaml
     author: Trung An
+    title: An's homepage
+    viewport: "width=device-width, initial-scale=1" 
+    charset: "UTF-8"
+    nodemeta: meta.yaml
 sorter:
     time:
         attr:
