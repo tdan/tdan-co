@@ -1,6 +1,15 @@
-<div class="article">
+{% extends "base_blog.j2" %}
+
+{% block blog_content %}
+<div class="article" id="{{resource.meta.title}}">
+	<h2>{% block title -%}{{ resource.meta.title }}{%- endblock %}</h2>
+	<div>
 	{% filter markdown|typogrify -%}
-	{% block article -%}
+	{% mark content -%}
+	{% block content -%}
 	{%- endblock %}
+	{%- endmark %}
 	{%- endfilter %}
+	</div>
 </div>
+{% endblock %}

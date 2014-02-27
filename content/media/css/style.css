@@ -1,4 +1,5 @@
 html {
+	/*font: 112%/1.5 'Open Sans', sans-serif;*/
 	font: 112%/1.5 'Libre Baskerville', serif;
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
@@ -8,7 +9,11 @@ html {
 body { background-color: #fdfdfd; color: #222222; }
 
 /*** Font ***/
-h1, h2, h3, h4, h5 { font-weight: 600; margin: 0; }
+h1, h2, h3, h4, h5 { 
+	font-weight: 600; margin: 0; 
+	/*font-family: 'Libre Baskerville', serif;*/
+}
+
 h1 {
 	font-size: 2rem;
 	margin-bottom: 1rem;
@@ -52,5 +57,5 @@ li {
 .menu ul { list-style: none; }
 .menu.top { text-align: center; }
 
-.article p { font-size: 0.9rem; }
-.codebox { font-size: 0.85rem; font-weight: 200; }
+.article p { font-size: 1rem; }
+.codebox pre { font-size: 0.8rem; }

@@ -39,14 +39,14 @@
 {%- endif %}
 {%- endmacro %}
 
-{% macro render_post(class=None, slug=None, res) %}
+{% macro render_post(res, slug=None, class=None) %}
 <article {{'class='~class if class}} {{'id='~slug if slug }}>
-	{% refer to res.relative_path as post %}
-	<h3 class="title">{{ content.meta.title }}</h3>
-	<a href="{{ content_url(res.url) }}">{{ post.image|markdown|typogrify }}</a>
-	{{ post.excerpt|markdown|typogrify }}
-	<time datetime="{{ res.meta.created.strftime('%Y-%m-%d') }}">
-    	Posted: {{ res.meta.created.strftime('%a, %d %b %Y') }}
-	</time>
+	<h2 class="title">{{ res.meta.title }}</h3>
+	<div>
+		{% filter markdown|typogrify -%}
+		{% mark content -%}
+		res.post
+		{%- endmark %}
+		{%- endfilter %}
 </article>
 {% endmacro %}
