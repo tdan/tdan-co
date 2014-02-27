@@ -1,0 +1,12 @@
+{% extends "base_blog.j2" %}
+
+{% block body %}
+<div class="blog-listing grid column-2-3 clearfix">
+<ol>
+	{% for res in resource.node.walk_resources_sorted_by_time() %}
+	<li><a href="{{ res.url }}"><h3>{{ res.meta.title }}</h3></a></li>
+	<span class="description">{{ res.meta.description }}</span>
+	{% endfor %}
+</ol>
+</div>
+{% endblock %}

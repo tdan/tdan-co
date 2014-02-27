@@ -1,6 +1,6 @@
 html {
-	/*font: 112%/1.5 'Open Sans', sans-serif;*/
-	font: 112%/1.5 'Libre Baskerville', serif;
+	font: 112%/1.5 'Open Sans', sans-serif;
+	/*font: 112%/1.5 'Libre Baskerville', serif;*/
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -11,7 +11,7 @@ body { background-color: #fdfdfd; color: #222222; }
 /*** Font ***/
 h1, h2, h3, h4, h5 { 
 	font-weight: 600; margin: 0; 
-	/*font-family: 'Libre Baskerville', serif;*/
+	font-family: 'Libre Baskerville', serif;
 }
 
 h1 {
@@ -24,17 +24,12 @@ h2 {
 	margin-bottom: .75rem;
 }
 
-h3 {
-	font-size: 1.2rem;
-	margin-bottom: .5rem;
-}
+h3 { font-size: 1.2rem;}
 
 .footer p {
 	font-size: 0.7em;
 	font-style: italic;
 }
-
-#about {}
 
 .profile-pic img{
 	width: 150px;
@@ -54,8 +49,15 @@ li {
 	text-indent: -2em;
 }
 
-.menu ul { list-style: none; }
+.menu ul, .blog-listing ol { list-style: none; }
 .menu.top { text-align: center; }
 
-.article p { font-size: 1rem; }
+.blog-content, .blog-listing { margin: 0 auto; }
+
+.description { font-size: 0.8rem; font-style: italic; }
 .codebox pre { font-size: 0.8rem; }
+/* cheap trick to get rid of <figcaption> and <br>
+ * inside codebox 
+ */
+.codebox figcaption, .codebox br { display: none; }
+.highlight br { display: inline; }
