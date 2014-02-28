@@ -40,13 +40,11 @@
 {%- endmacro %}
 
 {% macro render_post(res, slug=None, class=None) %}
-<article {{'class='~class if class}} {{'id='~slug if slug }}>
+{% refer to res.relative_path as post %}
+<article id="{{ res.metal.title }}" class="generate-by-macro">
 	<h2 class="title">{{ res.meta.title }}</h3>
 	<div>
-		{% filter markdown|typogrify -%}
-		{% mark content -%}
-		res.post
-		{%- endmark %}
-		{%- endfilter %}
+		{{ post.content|markdown|typogrify }}
+	</div>
 </article>
 {% endmacro %}
