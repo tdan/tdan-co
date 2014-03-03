@@ -1,5 +1,5 @@
 html {
-	font: 112%/1.5 'Open Sans', sans-serif;
+	font: 112%/1.5 'Libre Baskerville', serif;
 	font-weight: 400;
 	line-height: 1.52;
 	text-rendering: optimizeLegibility;
@@ -9,9 +9,14 @@ html {
 body { background-color: #fdfdfd; color: #222222; }
 
 /*** Font ***/
+@font-face {
+	font-family: 'DejaVu Sans Mono';
+	src: url('/media/fonts/DejaVuSansMono.ttf');
+}
+
 h1, h2, h3, h4, h5 { 
 	font-weight: 600; margin: 0; 
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -56,7 +61,7 @@ li {
 
 .description { font-size: 0.8rem; font-style: italic; }
 .codebox { border-style: solid; border-width: 1px; padding: 0 10px; }
-.codebox pre { font-size: 0.8rem; }
+.codebox pre { font-family: 'DejaVu Sans Mono', monospaced; font-size: 0.8rem; }
 /* cheap trick to get rid of <figcaption> and <br>
  * inside codebox 
  */
