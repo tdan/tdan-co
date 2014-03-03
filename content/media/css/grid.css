@@ -24,10 +24,10 @@ body { margin: 0; }
 .header { margin-bottom: 50px; }
 
 .container {
-	margin: 0 auto;
+	margin: 10px auto;
 	width: 100%;
-	max-width: 66em;
-	margin-bottom: 50px;
+	max-width: 1140px;
+	min-width: 780px;
 }
 
 .grid {
