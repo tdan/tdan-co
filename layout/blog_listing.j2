@@ -1,7 +1,7 @@
 {% extends "blog_base.j2" %}
 
 {% block body %}
-<div class="blog-listing grid column-2-3 clearfix">
+<div class="blog-listing grid column-3-4 clearfix">
 <ol>
 	{% for res in resource.node.walk_resources_sorted_by_time() %}
 	<li><a href="{{ res.url }}"><h3>{{ res.meta.title }}</h3></a></li>

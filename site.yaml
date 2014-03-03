@@ -48,3 +48,8 @@ tagger:
             archive_extension: html
             meta:
                 listable: false
+publisher:
+    github:
+        type: hyde.ext.publishers.dvcs.Git
+        path: ../tdan.github.io
+        url: git@github.com:tdan/tdan.github.io.git
