@@ -52,4 +52,8 @@ publisher:
     github:
         type: hyde.ext.publishers.dvcs.Git
         path: ../tdan.github.io
-        url: git@github.com:tdan/tdan.github.io.git
+        url: https://github.com/tdan/tdan.github.io.git
+    openshift:
+        type: hyde.ext.publishers.dvcs.Git
+        path: ../blog/public
+        url: ssh://53139061e0b8cdba00000013@blog-tdan.rhcloud.com/~/git/blog.git/
