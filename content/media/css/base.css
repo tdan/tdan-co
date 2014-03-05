@@ -96,3 +96,8 @@ pre { font-family: 'DejaVu Sans Mono', monospace; font-size: 0.8rem; }
 	font-family: 'Esteban', serif;
 	font-style: italic;
 }
+
+.profile-pic, #about { text-align: center; }
+
+//img { width: 100%; }
+
