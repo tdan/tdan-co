@@ -91,3 +91,8 @@ pre { font-family: 'DejaVu Sans Mono', monospace; font-size: 0.8rem; }
 .highlight br { display: inline; }
 
 .description { font-style: italic; font-size: 0.75rem; }
+
+#about {
+	font-family: 'Esteban', serif;
+	font-style: italic;
+}
