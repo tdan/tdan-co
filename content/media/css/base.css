@@ -4,9 +4,8 @@
 }
 
 html {
-	font: 112%/1.5 'Libre Baskerville', serif;
+	font: 112%/1.66 'Libre Baskerville', serif;
 	font-weight: 400;
-	line-height: 1.52;
 	letter-spacing: 1px;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
