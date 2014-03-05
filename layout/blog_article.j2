@@ -5,7 +5,7 @@
 <div class="blog-content grid column-3-4">
 	{# render_post(resource) #}
 	<article id="{{ resource.meta.title }}">
-		<h2>{{ resource.meta.title }}</h2>
+		<h1>{{ resource.meta.title }}</h1>
 		<div>
 		{% filter markdown|typogrify -%}
 		{% block blog_content -%}
