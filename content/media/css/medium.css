@@ -1,5 +1,4 @@
 @media (min-width: 481px) and (max-width: 960px) {
-	html { font-size: 100%; line-height: 1.75; } 
 	.container { width: 96%; }
 	.header { margin-bottom: 20px; }
 }

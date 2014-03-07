@@ -78,6 +78,16 @@ pre { font-family: 'DejaVu Sans Mono', monospace; font-size: 0.8rem; }
 
 p { white-space: pre-line; }
 
+/* a:hover MUST comes after a:link and a:visited
+ * a:active MUST comes after a:hover 
+ */
+a:link { color: #9C00A6; text-decoration: none; }
+a:visited { color: #9C00A6; }
+a:hover { color: #9C00A6; text-decoration: underline; }
+a:active { color: 
+
+img { max-width: 32.82%; height: auto; }
+
 .menu ul, .blog-listing ol { list-style: none; }
 .menu.top { text-align: center; }
 
@@ -91,4 +101,4 @@ p { white-space: pre-line; }
 .description { font-style: italic; font-size: 0.75rem; }
 
 .profile-pic, #about { text-align: center; }
-#about { font-style: italic; }
+#about { margin-top: 1.1rem; font-style: italic; }

@@ -1,6 +1,6 @@
 ---
 extends: base.j2
-default_block: body
+default_block: content
 title: About Me
 ---
 <div class="grid">
@@ -11,12 +11,13 @@ title: About Me
 <article id="about">
 {% filter markdown|typogrify -%}
 
-### Hello!
-My name is Trung.
+## Hello!
+My name is Trung. I'm from Hanoi, Vietnam.
 
-I'm a graduate from Iowa State University, and currently working in Orlando, Florida as a web developer.
+I'm currently working in Orlando, Florida as a web developer. I graduated from Iowa State University, majoring in Computer Science.
 
-I'm from Hanoi, Vietnam.
+You can connect with me via [Github](http://github.com/tdan), [Twitter](http://twitter.com/tdanify), [Lastfm](http://last.fm/user/slash9x), 
+or check out [my blog](/blog/).
 
 {%- endfilter %}
 </article>

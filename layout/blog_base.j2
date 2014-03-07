@@ -1,13 +1,7 @@
 {% extends "base.j2" %}
 
 {% block header %}
-<nav class="menu top">
-	<a href="/">Home</a>
-	<span class="seperator">/</span>
-	<a href="/blog/">Blog</a>
-	<span class="seperator">/</span>
-	<a href="/archives/">Archives</a>
-</nav>
+{% include "header.j2" %}
 {% endblock %}
 
-{% block body %}{% endblock %}
+{% block content %}{% endblock %}

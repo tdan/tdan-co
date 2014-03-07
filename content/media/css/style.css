@@ -1,4 +1,4 @@
 @import url(/media/css/base.css); /* base style, also suitable for small to medium desktop screen (10-20.9") */
-@import url(/media/css/x-large.css) (min-width: 1441px); /* large desktop screen (>= 21") */
+@import url(/media/css/x-large.css) (min-width: 1600px); /* large desktop screen (>= 21") */
 @import url(/media/css/medium.css) (min-width: 481px) and (max-width: 960px); /* for tablets */ 
 @import url(/media/css/small.css) (max-width: 480px); /* for smart phones */
