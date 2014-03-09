@@ -3,6 +3,12 @@
 	src: url('/media/fonts/DejaVuSansMono.ttf');
 }
 
+*, *:before, *:after {
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 html {
 	font: 112%/1.66 'Libre Baskerville', serif;
 	font-weight: 400;
@@ -16,12 +22,6 @@ body {
 	max-width: 1200px;
 	background: #f9f9f9;
 	color: #222222;
-}
-
-*, *:before, *:after {
-	-webkit-box-sizing:	border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 /* Clearfix to fix float element */
@@ -74,22 +74,28 @@ h3 { font-size: 1.2rem;}
 pre { font-family: 'DejaVu Sans Mono', monospace; font-size: 0.8rem; }
 
 /** Misc **/
-.header { margin-bottom: 50px; }
+.header { margin-bottom: 50px; border-bottom: 1px solid #E4E8EA; }
+.header div { display: inline-block; vertical-align: bottom; position: relative; }
+.header .nav { margin-top: 2rem; }
+.header ul { list-style: none; }
+.header ul > li { display: inline-block; padding-left: 3rem; }
+.header ul > li > a { color: #CFD7DA; }
+.header ul > li > a:hover { color: #DAD2CF; }
+.home-logo { width: 8rem; height: 8rem; }
 
-p { white-space: pre-line; }
+p { white-space: pre-line; color: #57534A; }
 
 /* a:hover MUST comes after a:link and a:visited
  * a:active MUST comes after a:hover 
  */
-a:link { color: #9C00A6; text-decoration: none; }
-a:visited { color: #9C00A6; }
-a:hover { color: #9C00A6; text-decoration: underline; }
-a:active { color: 
+a:link { color: #011090; text-decoration: none; }
+a:visited { color: #011090; }
+a:hover { color: #011090; text-decoration: underline; }
 
-img { max-width: 32.82%; height: auto; }
+.profile-pic { width: 32%; max-width: 256px; margin: 0 auto; } 
+img { max-width: 100%; height: auto; }
 
-.menu ul, .blog-listing ol { list-style: none; }
-.menu.top { text-align: center; }
+.blog-listing ol { list-style: none; }
 
 .codebox { border-style: solid; border-width: 1px; padding: 0 10px; }
 /* cheap trick to get rid of <figcaption> and <br>
@@ -100,5 +106,4 @@ img { max-width: 32.82%; height: auto; }
 
 .description { font-style: italic; font-size: 0.75rem; }
 
-.profile-pic, #about { text-align: center; }
-#about { margin-top: 1.1rem; font-style: italic; }
+#about { text-align: center; margin-top: 1.1rem; font-style: italic; }
