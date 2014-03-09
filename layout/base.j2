@@ -23,7 +23,7 @@
 				compatibility mode is within the first 1K bytes
 				code.google.com/p/chromium/issues/detail?id=23003 -->
 
-	<title>{% block title %}{{ resource.meta.title }}{% endblock %}</title>
+	<title>{% block title %}{{ page.title|safe }} | {{ site.name }}{% endblock %}</title>
 	<meta name="description" content="{{ resource.meta.description }}">
 	<meta name="author" content="{{ resource.meta.author }}">
 
@@ -58,8 +58,8 @@
 			{% endblock %}
 		</div>
 		<!-- end header -->
-		<div class="body">
-			{% block body %}
+		<div class="content">
+			{% block content %}
 			{% endblock %}
 		</div>
 		<!-- end content -->

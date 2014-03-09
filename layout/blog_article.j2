@@ -1,8 +1,7 @@
 {% extends "blog_base.j2" %}
-{# from "macros.j2" import render_post #}
 
-{% block body %}
-<div class="blog-content grid column-full">
+{% block content %}
+<div class="blog-article grid column-full">
 	{# render_post(resource) #}
 	<article id="{{ resource.meta.title }}">
 		<h1>{{ resource.meta.title }}</h1>

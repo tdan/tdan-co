@@ -26,7 +26,7 @@ context:
                 url: blog
 meta:
     author: Trung An
-    title: An's homepage
+    title: Trung An
     viewport: "width=device-width, initial-scale=1" 
     charset: "UTF-8"
     nodemeta: meta.yaml
