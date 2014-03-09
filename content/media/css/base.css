@@ -74,14 +74,14 @@ h3 { font-size: 1.2rem;}
 pre { font-family: 'DejaVu Sans Mono', monospace; font-size: 0.8rem; }
 
 /** Misc **/
-.header { margin-bottom: 50px; border-bottom: 1px solid #E4E8EA; }
-.header div { display: inline-block; vertical-align: bottom; position: relative; }
+.header { margin-bottom: 3rem; border-bottom: 1px solid #E4E8EA; }
+.header div { display: inline-block; vertical-align: bottom; }
 .header .nav { margin-top: 2rem; }
 .header ul { list-style: none; }
 .header ul > li { display: inline-block; padding-left: 3rem; }
 .header ul > li > a { color: #CFD7DA; }
 .header ul > li > a:hover { color: #DAD2CF; }
-.home-logo { width: 8rem; height: 8rem; }
+.home-logo { max-width: 20%; width: 8rem; height: 8rem; }
 
 p { white-space: pre-line; color: #57534A; }
 
