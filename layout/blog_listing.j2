@@ -1,10 +1,17 @@
 {% extends "blog_base.j2" %}
 {% block content %}
 <div class="blog-listing grid column-3-4 clearfix">
-<ol>
+<ol class="writings">
 	{% for res in resource.node.walk_resources_sorted_by_time() %}
-	<li><a href="{{ res.url }}"><h3>{{ res.meta.title }}</h3></a></li>
-	<span class="description">{{ res.meta.description }}</span>
+	<li>
+		<div class="datetime" id="{{ res.meta.created.strftime('%Y-%m-%d') }}">
+			{{ res.meta.created.strftime('%a, %d %b %Y') }}
+		</div>
+		<div class="title push-right">
+			<a href="{{ res.url }}"><h3>{{ res.meta.title }}</h3></a>
+			<span class="description">{{ res.meta.description }}</span>
+		</div>
+	</li>
 	{% endfor %}
 </ol>
 </div>
