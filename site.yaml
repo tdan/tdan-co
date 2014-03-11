@@ -18,12 +18,6 @@ context:
                 css_class: home
                 type: page
                 url: index.html
-            -
-                name: Blog
-                description: Blog
-                css_class: blog
-                type: node
-                url: blog
 meta:
     author: Trung An
     title: Trung An
@@ -43,7 +37,7 @@ tagger:
     archives:
         blog:
             source: blog
-            target: blog/tags
+            target: tags
             template: tagged_posts.j2 # TODO: change the template file 
             archive_extension: html
             meta:

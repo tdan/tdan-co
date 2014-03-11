@@ -4,4 +4,5 @@
 	.header { margin-bottom: 2rem; }
 	.header .nav { margin-top: 1rem; }
 	.header > li { padding-left: 1rem; }
+	.blog-listing ol { padding-left: 5%; }
 }
