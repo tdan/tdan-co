@@ -2,7 +2,6 @@
 	html { font-size: 100%; line-height: 1.55; }
 	.container { width: 98%; }
 	.header { margin-bottom: 2rem; }
-	.header .nav { margin-top: 1rem; }
 	.header > li { padding-left: 1rem; }
 	.blog-listing ol { padding-left: 5%; }
 }

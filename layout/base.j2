@@ -80,6 +80,7 @@
 	{% block js %}
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.11.0.min.js">\x3C/script>')</script>
+	<script src="{{ media_url('js/libs/tinynav.min.js') }}"></script>
 
 	{% if site.config.mode == "production" -%}
 		{% include "analytics.j2" %}
