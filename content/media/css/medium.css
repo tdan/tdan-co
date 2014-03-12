@@ -2,9 +2,8 @@
 .header { margin-bottom: 1.5rem; }
 .blog-listing ol { padding-left: 15%; }
 
-@media (min-width: 961px) and (max-width: 1024px) {
-}
-
-@media (min-width: 481px) and (max-width: 960px) {
+@media (max-width: 650px) {
+	.js #nav { display: none; }
+	.js .selectnav { display: block; }
 }
 

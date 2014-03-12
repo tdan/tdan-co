@@ -4,4 +4,6 @@
 	.header { margin-bottom: 2rem; }
 	.header > li { padding-left: 1rem; }
 	.blog-listing ol { padding-left: 5%; }
+	.js #nav { display: none; }
+	.js .selectnav { display: block; } 
 }

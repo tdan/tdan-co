@@ -77,11 +77,26 @@ pre { font-family: 'DejaVu Sans Mono', monospace; font-size: 0.8rem; }
 /** Misc **/
 .header { margin-bottom: 3rem; border-bottom: 1px solid #E4E8EA; }
 .header div { display: inline-block; vertical-align: bottom; }
-.header .nav { margin-top: 2rem; }
+.header .nav-bar { margin-top: 2rem; }
 .header ul { list-style: none; padding-left: 0; float: right;}
 .header ul > li { display: inline-block; padding-left: 3rem; }
 .header ul > li > a { color: #CFD7DA; }
 .header ul > li > a:hover { color: #DAD2CF; }
+#home-logo { float: left; min-height: 40px; }
+.selectnav {
+	/* style tinynav */
+	overflow: hidden;
+	float: right; 
+	width: 75%; height: 2rem;
+	background: url(/media/images/down_arrow_select.jpg) no-repeat right #ddd;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+
+	/* hide tinynav when open on normal screen */
+	display: none;
+}
 
 p { white-space: pre-line; color: #57534A; }
 
@@ -91,6 +106,7 @@ p { white-space: pre-line; color: #57534A; }
 a:link { color: #011090; text-decoration: none; }
 a:visited { color: #011090; }
 a:hover { color: #011090; text-decoration: underline; }
+a:active { color: #011090; text-decoration: none; }
 
 .profile-pic { width: 32%; max-width: 256px; margin: 0 auto; } 
 img { max-width: 100%; height: auto; }
