@@ -1,6 +1,3 @@
 deploy/
 .hyde_deps
 *.swp
-content/media/images/
-content/media/favicon.ico
-content/media/apple-touch-icon.png
