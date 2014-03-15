@@ -109,7 +109,7 @@ a:hover { color: #011090; text-decoration: underline; }
 a:active { color: #011090; text-decoration: none; }
 
 .profile-pic { width: 32%; max-width: 256px; margin: 0 auto; } 
-img { max-width: 100%; height: auto; }
+img, canvas, iframe, video { max-width: 100%; height: auto; }
 
 .codebox { border-style: solid; border-width: 1px; padding: 0 10px; }
 /* cheap trick to get rid of <figcaption> and <br>
