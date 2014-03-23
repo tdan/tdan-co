@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
@@ -23,7 +23,7 @@
 				compatibility mode is within the first 1K bytes
 				code.google.com/p/chromium/issues/detail?id=23003 -->
 
-	<title>{% block title %}{{ page.title|safe }} | {{ site.name }}{% endblock %}</title>
+	<title>{{ resource.meta.title }}</title>
 	<meta name="description" content="{{ resource.meta.description }}">
 	<meta name="author" content="{{ resource.meta.author }}">
 
