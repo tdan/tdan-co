@@ -98,7 +98,7 @@ pre { font-family: 'DejaVu Sans Mono', monospace; font-size: 0.8rem; }
 	display: none;
 }
 
-p { white-space: pre-line; color: #57534A; }
+p { white-space: pre-line; color: #444; }
 
 /* a:hover MUST comes after a:link and a:visited
  * a:active MUST comes after a:hover 
@@ -126,7 +126,7 @@ img, canvas, iframe, video { max-width: 100%; height: auto; }
 	height: 100%;
 }
 
-.codebox { border-style: solid; border-width: 1px; padding: 0 10px; }
+.codebox { border-style: solid; border-width: 1px; padding: 0 10px; background-color: #eee; }
 /* cheap trick to get rid of <figcaption> and <br>
  * inside codebox 
  */
