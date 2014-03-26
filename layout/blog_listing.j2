@@ -5,12 +5,12 @@
 	{% for res in resource.node.walk_resources_sorted_by_time() %}
 	<li>
 	<div class="grid column-full" >
-		<div class="datetime column-1-4" id="{{ res.meta.created.strftime('%Y-%m-%d') }}">
-			{{ res.meta.created.strftime('%a, %d %b %Y') }}
-		</div>
 		<div class="title column-2-3 push-right">
 			<a href="{{ res.url }}"><h3>{{ res.meta.title }}</h3></a>
 			<span class="description">{{ res.meta.description }}</span>
+		</div>
+		<div class="datetime column-1-4" id="{{ res.meta.created.strftime('%Y-%m-%d') }}">
+			{{ res.meta.created.strftime('%a, %d %b %Y') }}
 		</div>
 	</div>
 	</li>
