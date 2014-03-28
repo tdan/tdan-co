@@ -6,4 +6,5 @@
 	.blog-listing ol { padding-left: 5%; }
 	.js #nav { display: none; }
 	.js .selectnav { display: block; } 
+	pre { white-space: pre; overflow-x: scroll; }
 }
