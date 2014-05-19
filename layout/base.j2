@@ -38,18 +38,16 @@
 	{% endblock favicons %}
 
 	<link rel="stylesheet" type="text/css" href="{{ media_url('css/normalize.min.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ media_url('css/style.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ media_url('css/syntax.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ media_url('css/styles.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ media_url('css/syntax.min.css') }}">
 	{% block extra_css %}{% endblock extra_css %}
 
 	{% block headjs %}
 	<!-- All JavaScript at the bottom, except for Modernizr which
 				enables HTML5 elements & feature detects -->
 	{% endblock headjs %}
-	<!--link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'-->
-	<!--link href='http://fonts.googleapis.com/css?family=Roboto|Roboto+Slab' rel='stylesheet' type='text/css'-->
-	<link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'></link>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif&subset=latin,vietnamese' rel='stylesheet' type='text/css'></link>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,vietnamese' rel='stylesheet' type='text/css'></link>
 	{% block endhead %}{% endblock endhead %}
 </head>
 <body>

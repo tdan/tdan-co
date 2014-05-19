@@ -1,9 +1,0 @@
-@media (min-width: 1921px) {
-	html { font-size: 130%; }
-	.container { width: 60%; }
-	.blog-listing ol { padding-left: 20%; }
-}
-
-@media (min-width: 1600px) and (max-width: 1920px) {
-	html { font-size: 120%; }
-}
