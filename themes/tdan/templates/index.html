@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="pure-g">
+	<div id="sidebar" class="pure-u-1 pure-u-md-1-4">
+		<img class="logo pure-img" src="" />
+		<div class="name">
+			<h1 id="name">Trung An</h1>
+			<h2 id="role">Software/Web Developer</h2>
+		</div>
+		<div class="divider"></div>
+		<div class="contact">
+			<h3 class="title">Contact</h3>	
+			<p class="phone-number">+1 407 630 9951</p>
+			<p class="email">tr@tdan.co</p>
+		</div>
+	</div>
+
+	<div id="main" class="pure-u-1 pure-u-md-3-4">
+		{% for article in articles %}
+		<div id="{{ article.slug }}" class="content-block">
+			<h2 class="title">{{ article.title }}</h2>
+			<div class="content">
+				{{ article.content }}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+{% endblock %}
