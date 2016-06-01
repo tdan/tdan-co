@@ -3,20 +3,20 @@
 {% block body %}
 <div class="pure-g">
 	<div id="sidebar" class="pure-u-1 pure-u-md-1-4">
-		<img class="logo pure-img" src="" />
-		<div class="name">
-			<h1 id="name">Trung An</h1>
-			<h2 id="role">Software/Web Developer</h2>
+		<img class="brand-logo pure-img" src="" />
+		<div class="header">
+			<h1 class="brand-name">Trung An</h1>
+			<h2 class="brand-tagline">Software/Web Developer</h2>
 		</div>
 		<div class="divider"></div>
 		<div class="contact">
 			<h3 class="title">Contact</h3>	
-			<p class="phone-number">+1 407 630 9951</p>
-			<p class="email">tr@tdan.co</p>
+			<p class="phone-number"><a href="tel:+1 407 630 9951">+1 407 630 9951</a></p>
+			<p class="email"><a href="mailto:tr@tdan.co">tr@tdan.co</a></p>
 		</div>
 	</div>
 
-	<div id="main" class="pure-u-1 pure-u-md-3-4">
+	<div id="main" class="pure-u-1 pure-u-md-17-24">
 		{% for article in articles %}
 		<div id="{{ article.slug }}" class="content-block">
 			<h2 class="title">{{ article.title }}</h2>

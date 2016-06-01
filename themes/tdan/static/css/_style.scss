@@ -1,0 +1,31 @@
+@import "_variables";
+@import "_mixins";
+
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	@include border-box;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+	/* Set your content font stack here: */
+	font-family: $default-font;
+	color: $primary-text-color;
+}
+
+h1, h2, h3 { color: $primary-color;}
+h4, h5 { color: $secondary-text-color; }
+a { text-decoration: none; }
+
+#sidebar {
+	background-color: $primary-color;
+	padding: 5em;
+	color: $sidebar-text-color;
+	text-align: center;
+	letter-spacing: 2px;
+
+	h1, h2, h3, a { color: $sidebar-text-color; }
+}

@@ -1,5 +1,34 @@
+/* Default Color Scheme */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
 html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {
-	/* Set your content font stack here: */
-	font-family: 'Lato', sans-serif;
-}
+.pure-g [class*="pure-u"] {
+  /* Set your content font stack here: */
+  font-family: "Lato", "Asap", sans-serif;
+  color: #353535; }
+
+h1, h2, h3 {
+  color: #c1343e; }
+
+h4, h5 {
+  color: #8c8c8c; }
+
+a {
+  text-decoration: none; }
+
+#sidebar {
+  background-color: #c1343e;
+  padding: 5em;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px; }
+  #sidebar h1, #sidebar h2, #sidebar h3, #sidebar a {
+    color: #fff; }
