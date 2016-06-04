@@ -1,6 +1,46 @@
+@import "_variables";
+
 @mixin border-box {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin translate($x, $y) {
+	-webkit-transform: translate($x, $y);
+	-moz-transform: translate($x, $y);
+	-ms-transform: translate($x, $y);
+	transform: translate($x, $y);
+}
+
+@mixin small-screen {
+	@media screen and (min-width: #{$small}) {
+		@content;
+	}
+}
+
+@mixin medium-screen {
+	@media screen and (min-width: #{$medium}) {
+		@content;
+	}
+}
+
+@mixin large-screen {
+	@media screen and (min-width: #{$large}) {
+		@content;
+	}
+}
+
+@mixin xlarge-screen {
+	@media screen and (min-width: #{$xlarge}) {
+		@content;
+	}
 }

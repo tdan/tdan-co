@@ -1,4 +1,13 @@
 /* Default Color Scheme */
+/* 568px */
+/* 768px */
+/* 1024px */
+/* 1280px */
+/* Default Color Scheme */
+/* 568px */
+/* 768px */
+/* 1024px */
+/* 1280px */
 *,
 *:after,
 *:before {
@@ -6,13 +15,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
 html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
-  font-family: "Lato", "Asap", sans-serif;
+  font-family: "Asap", "Lato", sans-serif;
   color: #353535; }
 
 h1, h2, h3 {
@@ -32,3 +41,26 @@ a {
   letter-spacing: 2px; }
   #sidebar h1, #sidebar h2, #sidebar h3, #sidebar a {
     color: #fff; }
+  @media screen and (min-width: 48em) {
+    #sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      display: table;
+      height: 100vh; } }
+
+@media screen and (min-width: 48em) {
+  #main {
+    margin-left: 33%;
+    display: table;
+    height: 100vh; } }
+@media screen and (min-width: 64em) {
+  #main {
+    margin-left: 25%; } }
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle; }
+  .wrapper .content-block {
+    max-width: 750px;
+    margin: 0 auto; }

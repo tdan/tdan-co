@@ -17,16 +17,20 @@
 		<meta name="google-site-verification" content="k7I3qA6wf6sb-egcACDMFyVWRdiXFige6bteXjUm8Zs" />
 		
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
-		<link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css&pure/0.6.0/grids-responsive-min.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css" />
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
 
-		<link href='https://fonts.googleapis.com/css?family=Lato|Asap' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Lato|Asap" rel="stylesheet" />
 		<link rel="stylesheet" href="/static/css/style.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" />
 		
 		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+		<script src="/static/js/custom.js"></script>
 		{% block extra_head %}{% endblock %}
 	 </head>
 	 <body>
 		 {% block body %}{% endblock %}
+		 {% block footer %}{% endblock %}
 	 </body>
 </html>

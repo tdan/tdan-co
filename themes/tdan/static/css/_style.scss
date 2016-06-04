@@ -1,6 +1,7 @@
 @import "_variables";
 @import "_mixins";
 
+
 *,
 *:after,
 *:before {
@@ -28,4 +29,34 @@ a { text-decoration: none; }
 	letter-spacing: 2px;
 
 	h1, h2, h3, a { color: $sidebar-text-color; }
+
+	@include medium-screen {
+		position: fixed;
+		top: 0; bottom: 0;
+		display: table;
+		height: 100vh;
+	}
 }
+
+#main {
+	@include medium-screen {
+		margin-left: 33%; 
+		display: table;
+		height: 100vh;
+	}
+
+	@include large-screen {
+		margin-left: 25%;
+	}
+}
+
+.wrapper { 
+	display: table-cell;
+	vertical-align: middle;
+
+	.content-block {
+		max-width: 750px;
+		margin: 0 auto;
+	}
+}
+

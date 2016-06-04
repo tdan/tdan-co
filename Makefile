@@ -62,6 +62,7 @@ help:
 	@echo '                                                                          '
 
 html:
+	sass themes/tdan/static/css/_style.scss > themes/tdan/static/css/style.css
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
