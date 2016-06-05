@@ -21,9 +21,26 @@ h1, h2, h3 { color: $primary-color;}
 h4, h5 { color: $secondary-text-color; }
 a { text-decoration: none; }
 
+
+.wrapper { 
+	//display: table-cell;
+	//vertical-align: middle;
+
+	@include small-screen {
+		height: 100vh !important;
+	}
+
+	.content-block {
+		max-width: 750px;
+		position: relative;
+		top:50%;
+		transform: translateY(-50%);
+		margin: 0 auto;
+	}
+}
+
 #sidebar {
 	background-color: $primary-color;
-	padding: 5em;
 	color: $sidebar-text-color;
 	text-align: center;
 	letter-spacing: 2px;
@@ -33,7 +50,6 @@ a { text-decoration: none; }
 	@include medium-screen {
 		position: fixed;
 		top: 0; bottom: 0;
-		display: table;
 		height: 100vh;
 	}
 }
@@ -41,7 +57,6 @@ a { text-decoration: none; }
 #main {
 	@include medium-screen {
 		margin-left: 33%; 
-		display: table;
 		height: 100vh;
 	}
 
@@ -50,13 +65,29 @@ a { text-decoration: none; }
 	}
 }
 
-.wrapper { 
-	display: table-cell;
-	vertical-align: middle;
+.slick-dots {
+	position: absolute;
+	top: 45%;
+	right: 50px;
+	list-style-type: none;
+	width: 10px;
 
-	.content-block {
-		max-width: 750px;
-		margin: 0 auto;
+	li {
+		position: relative;
+		width: 10px;
+		height: 10px;
+		line-height: 1;
+		margin: 0 10px 15px;
+		background: transparent;
+
+		button {
+			font-size: 10px;
+			color: #fff !important;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: 1px solid transparent;
+			@include border-radius(50%);
+		}
 	}
 }
-

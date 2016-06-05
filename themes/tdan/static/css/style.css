@@ -21,7 +21,7 @@
 html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
-  font-family: "Asap", "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #353535; }
 
 h1, h2, h3 {
@@ -33,9 +33,18 @@ h4, h5 {
 a {
   text-decoration: none; }
 
+@media screen and (min-width: 35.5em) {
+  .wrapper {
+    height: 100vh !important; } }
+.wrapper .content-block {
+  max-width: 750px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto; }
+
 #sidebar {
   background-color: #c1343e;
-  padding: 5em;
   color: #fff;
   text-align: center;
   letter-spacing: 2px; }
@@ -46,21 +55,37 @@ a {
       position: fixed;
       top: 0;
       bottom: 0;
-      display: table;
       height: 100vh; } }
 
 @media screen and (min-width: 48em) {
   #main {
     margin-left: 33%;
-    display: table;
     height: 100vh; } }
 @media screen and (min-width: 64em) {
   #main {
     margin-left: 25%; } }
 
-.wrapper {
-  display: table-cell;
-  vertical-align: middle; }
-  .wrapper .content-block {
-    max-width: 750px;
-    margin: 0 auto; }
+.slick-dots {
+  position: absolute;
+  top: 45%;
+  right: 50px;
+  list-style-type: none;
+  width: 10px; }
+  .slick-dots li {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    line-height: 1;
+    margin: 0 10px 15px;
+    background: transparent; }
+    .slick-dots li button {
+      font-size: 10px;
+      color: #fff !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid transparent;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
