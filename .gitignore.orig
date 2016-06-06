@@ -2,7 +2,11 @@
 deploy/
 .hyde_deps
 *.swp
+=======
+*.pyc
+*.swp
 *.swo
 venv/
 output/
 .sass-cache/
+>>>>>>> master
