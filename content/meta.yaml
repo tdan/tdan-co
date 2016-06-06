@@ -1,3 +1,0 @@
-extends: blog_article.j2
-default_block: blog_content
-listable: true
