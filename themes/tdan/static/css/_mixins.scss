@@ -28,6 +28,13 @@
 	transform: translate($x, $y);
 }
 
+@mixin transition($value) {
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	-ms-transition: $value;
+	transition: $value;
+}
+
 @mixin small-screen {
 	@media screen and (min-width: #{$small}) {
 		@content;

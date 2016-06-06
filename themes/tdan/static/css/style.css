@@ -1,8 +1,10 @@
+/*$primary-text-color: #353535;*/
 /* Default Color Scheme */
 /* 568px */
 /* 768px */
 /* 1024px */
 /* 1280px */
+/*$primary-text-color: #353535;*/
 /* Default Color Scheme */
 /* 568px */
 /* 768px */
@@ -22,7 +24,11 @@ html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
   font-family: "Lato", sans-serif;
-  color: #353535; }
+  font-size: 18px;
+  color: #141314;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 1px; }
 
 h1, h2, h3 {
   color: #c1343e; }
@@ -33,11 +39,38 @@ h4, h5 {
 a {
   text-decoration: none; }
 
+.brand-name {
+  font-size: 3.5rem;
+  line-height: 1.1; }
+
+.header {
+  padding-bottom: 2rem;
+  border-bottom: 3px solid #fff; }
+
+.contact {
+  padding-top: 2rem; }
+
+h2 {
+  font-size: 2.5rem; }
+  h2.title {
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 5px solid #ddd; }
+    h2.title .fa {
+      margin-right: 2rem;
+      color: #555; }
+  h2.hello {
+    font-family: "Yellowtail", cursive;
+    font-size: 3rem; }
+  h2.brand-tagline {
+    font-size: 1.4rem; }
+
 @media screen and (min-width: 35.5em) {
   .wrapper {
     height: 100vh !important; } }
 .wrapper .content-block {
   max-width: 750px;
+  width: 60%;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -47,7 +80,8 @@ a {
   background-color: #c1343e;
   color: #fff;
   text-align: center;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  text-transform: uppercase; }
   #sidebar h1, #sidebar h2, #sidebar h3, #sidebar a {
     color: #fff; }
   @media screen and (min-width: 48em) {
@@ -64,6 +98,10 @@ a {
 @media screen and (min-width: 64em) {
   #main {
     margin-left: 25%; } }
+#main .content {
+  font-size: 1.22rem; }
+  #main .content ul {
+    margin-left: 8%; }
 
 .slick-dots {
   position: absolute;
@@ -77,15 +115,59 @@ a {
     height: 10px;
     line-height: 1;
     margin: 0 10px 15px;
-    background: transparent; }
+    background: transparent;
+    opacity: 1; }
     .slick-dots li button {
       font-size: 10px;
+      height: 8px;
+      width: 8px;
       color: #fff !important;
       position: absolute;
       top: 0;
       left: 0;
       border: 1px solid transparent;
+      background: #cccccc;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       border-radius: 50%; }
+    .slick-dots li.slick-active button {
+      background: #555555; }
+
+.tooltip {
+  position: relative;
+  display: inline-block; }
+  .tooltip .tooltiptext {
+    position: absolute;
+    top: -60%;
+    bottom: auto;
+    right: 128%;
+    font-size: 0.85rem;
+    visibility: hidden;
+    width: 100px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    z-index: 1;
+    opacity: 0.9;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    transition: opacity 1s; }
+  .tooltip:hover .tooltiptext {
+    visibility: visible; }
+
+.center {
+  text-align: center;
+  margin: 0 auto; }
+
+.circle-img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }

@@ -10,11 +10,15 @@
 					<h1 class="brand-name">Trung An</h1>
 					<h2 class="brand-tagline">Software/Web Developer</h2>
 				</div>
-				<div class="divider"></div>
 				<div class="contact">
 					<h3 class="title">Contact</h3>	
 					<p class="phone-number"><a href="tel:+1 407 630 9951">+1 407 630 9951</a></p>
 					<p class="email"><a href="mailto:tr@tdan.co">tr@tdan.co</a></p>
+					<!--ul class="social-links">
+	     					<li class="twitter"><a href="https://twitter.com/tdanify"><i class="fa fa-twitter"></i></a></li>
+	     					<li class="github"><a href=""><i class="fa fa-github"></i></a></li>
+	     					<li class="linkedin"><a href=""><i class="fa fa-linkedin"></i></a></li>
+					</ul-->
 				</div>
 			</div>
 		</div>
@@ -25,7 +29,12 @@
 			{% for article in articles|reverse  %}
 			<div class="wrapper">
 				<div id="{{ article.slug }}" class="content-block">
-					<h2 class="title">{{ article.title }}</h2>
+					{% if article.slug == 'about' %}
+						<img class="headshot pure-img circle-img center" src="/static/images/trung-an.jpg" />
+						<h2 class="hello center">Hello</h2>
+					{% else %}
+						<h2 class="title">{{ article.title }}</h2>
+					{% endif %}
 					<div class="content">
 						{{ article.content }}
 					</div>

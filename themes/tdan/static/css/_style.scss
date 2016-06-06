@@ -14,24 +14,45 @@ html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
 	/* Set your content font stack here: */
 	font-family: $default-font;
+	font-size: $default-font-size;
 	color: $primary-text-color;
+	line-height: $default-line-height;
+	font-weight: $default-font-weight;
+	letter-spacing: 1px;
 }
 
 h1, h2, h3 { color: $primary-color;}
 h4, h5 { color: $secondary-text-color; }
 a { text-decoration: none; }
 
+.brand-name { font-size: 3.5rem; line-height: 1.1; }
+.header { padding-bottom: 2rem; border-bottom: 3px solid #fff; }
+.contact { padding-top: 2rem; }
+
+h2 { 
+	font-size: 2.5rem; 
+
+	&.title {
+		margin-bottom: 1.2rem;
+		padding-bottom: 1.2rem;
+		border-bottom: 5px solid #ddd;
+		.fa { margin-right: 2rem; color: #555; }
+	}
+	&.hello {
+		font-family: $cursive-font;
+		font-size: 3rem;
+	}
+	&.brand-tagline { font-size: 1.4rem; }
+}
 
 .wrapper { 
-	//display: table-cell;
-	//vertical-align: middle;
-
 	@include small-screen {
 		height: 100vh !important;
 	}
 
 	.content-block {
 		max-width: 750px;
+		width: 60%;
 		position: relative;
 		top:50%;
 		transform: translateY(-50%);
@@ -44,6 +65,7 @@ a { text-decoration: none; }
 	color: $sidebar-text-color;
 	text-align: center;
 	letter-spacing: 2px;
+	text-transform: uppercase;
 
 	h1, h2, h3, a { color: $sidebar-text-color; }
 
@@ -63,6 +85,12 @@ a { text-decoration: none; }
 	@include large-screen {
 		margin-left: 25%;
 	}
+
+	.content {
+		font-size: 1.22rem;
+
+		ul { margin-left: 8%; }
+	}
 }
 
 .slick-dots {
@@ -79,15 +107,51 @@ a { text-decoration: none; }
 		line-height: 1;
 		margin: 0 10px 15px;
 		background: transparent;
+		opacity: 1;
 
 		button {
 			font-size: 10px;
+			height: 8px; width: 8px;
 			color: #fff !important;
 			position: absolute;
 			top: 0;
 			left: 0;
 			border: 1px solid transparent;
+			background: #cccccc;
 			@include border-radius(50%);
+		}
+		&.slick-active button {
+			background: #555555;
 		}
 	}
 }
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+
+	.tooltiptext {
+		position: absolute;
+		top: -60%;
+		bottom: auto;
+		right: 128%;
+		font-size: 0.85rem;
+		visibility: hidden;
+		width: 100px;
+		background-color: #555;
+		color: $sidebar-text-color;
+		text-align: center;
+		padding: 5px 0;
+		z-index: 1;
+		opacity: 0.9;
+		@include border-radius(6px);
+		@include transition(opacity 1s);
+	}
+
+	&:hover .tooltiptext {
+		visibility: visible;
+	}
+}
+
+.center { text-align: center; margin: 0 auto; }
+.circle-img { @include border-radius(50%); }
