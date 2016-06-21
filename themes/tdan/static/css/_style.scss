@@ -46,18 +46,7 @@ h2 {
 }
 
 .wrapper { 
-	@include small-screen {
-		height: 100vh !important;
-	}
-
-	.content-block {
-		max-width: 750px;
-		width: 60%;
-		position: relative;
-		top:50%;
-		transform: translateY(-50%);
-		margin: 0 auto;
-	}
+	min-height: 100vh !important;
 }
 
 #sidebar {
@@ -66,32 +55,24 @@ h2 {
 	text-align: center;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	height: 100vh;
 
 	h1, h2, h3, a { color: $sidebar-text-color; }
-
-	@include medium-screen {
-		position: fixed;
-		top: 0; bottom: 0;
-		height: 100vh;
-	}
 }
 
 #main {
-	@include medium-screen {
-		margin-left: 33%; 
-		height: 100vh;
-	}
-
-	@include large-screen {
-		margin-left: 25%;
-	}
+	height: 100vh;
 
 	.content {
 		font-size: 1.22rem;
 
 		ul { margin-left: 8%; }
+
+		h3 { color: $primary-text-color; }
 	}
 }
+
+.scrolling-content { width: 100%; }
 
 .slick-dots {
 	position: absolute;
@@ -153,5 +134,7 @@ h2 {
 	}
 }
 
-.center { text-align: center; margin: 0 auto; }
 .circle-img { @include border-radius(50%); }
+.center { text-align: center; margin: 0 auto; }
+.center-flex { display: flex; justify-content: center; align-items: center; }
+.valign { position: relative; top: 50%; transform: translateY(50%); }

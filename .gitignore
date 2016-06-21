@@ -3,6 +3,7 @@ deploy/
 .hyde_deps
 *.swp
 *.swo
+*.pyc
 venv/
 output/
 .sass-cache/

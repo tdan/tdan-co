@@ -6,19 +6,28 @@ $(document).ready(function() {
 		infinite: false,
 		dots: true,
 		arrows: false,
-		draggable: false
+		mobileFirst: true,
+		draggable: false,
+		responsive: [
+			{ 
+				breakpoint: 600,
+				settings: "unslick"
+			}
+		]
 	});
 
-	$('.scrolling-content').bind('mousewheel', function(e) {
-		if(e.originalEvent.wheelDelta > 0) {
-			e.preventDefault();
-			$('.scrolling-content').slick('slickPrev');
-		} else {
-			e.preventDefault();
-			$('.scrolling-content').slick('slickNext');
-		}
-	});
-
+	if ($(window).width() > 800 ) {
+		$('.scrolling-content').bind('mousewheel', function(e) {
+			if(e.originalEvent.wheelDelta > 0) {
+				e.preventDefault();
+				$('.scrolling-content').slick('slickPrev');
+			} else {
+				e.preventDefault();
+				$('.scrolling-content').slick('slickNext');
+			}
+		});
+	}
+	
 	$('#work-education h2').prepend('<i class="fa fa-pencil" aria-hidden="true"></i>');
 	$('#skills h2').prepend('<i class="fa fa-laptop" aria-hidden="true"></i>');
 	$('#projects h2').prepend('<i class="fa fa-cogs" aria-hidden="true"></i>');

@@ -24,7 +24,7 @@ html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 100%;
   color: #141314;
   line-height: 1.6;
   font-weight: 400;
@@ -65,43 +65,30 @@ h2 {
   h2.brand-tagline {
     font-size: 1.4rem; }
 
-@media screen and (min-width: 35.5em) {
-  .wrapper {
-    height: 100vh !important; } }
-.wrapper .content-block {
-  max-width: 750px;
-  width: 60%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 auto; }
+.wrapper {
+  min-height: 100vh !important; }
 
 #sidebar {
   background-color: #c1343e;
   color: #fff;
   text-align: center;
   letter-spacing: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  height: 100vh; }
   #sidebar h1, #sidebar h2, #sidebar h3, #sidebar a {
     color: #fff; }
-  @media screen and (min-width: 48em) {
-    #sidebar {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      height: 100vh; } }
 
-@media screen and (min-width: 48em) {
-  #main {
-    margin-left: 33%;
-    height: 100vh; } }
-@media screen and (min-width: 64em) {
-  #main {
-    margin-left: 25%; } }
-#main .content {
-  font-size: 1.22rem; }
-  #main .content ul {
-    margin-left: 8%; }
+#main {
+  height: 100vh; }
+  #main .content {
+    font-size: 1.22rem; }
+    #main .content ul {
+      margin-left: 8%; }
+    #main .content h3 {
+      color: #141314; }
+
+.scrolling-content {
+  width: 100%; }
 
 .slick-dots {
   position: absolute;
@@ -162,12 +149,22 @@ h2 {
   .tooltip:hover .tooltiptext {
     visibility: visible; }
 
-.center {
-  text-align: center;
-  margin: 0 auto; }
-
 .circle-img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%; }
+
+.center {
+  text-align: center;
+  margin: 0 auto; }
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.valign {
+  position: relative;
+  top: 50%;
+  transform: translateY(50%); }

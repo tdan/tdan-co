@@ -2,33 +2,32 @@
 
 {% block body %}
 <div class="pure-g">
-	<div id="sidebar" class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-4">
-		<div class="wrapper">
-			<div class="content-block">
-				<img class="brand-logo pure-img" src="" />
-				<div class="header">
-					<h1 class="brand-name">Trung An</h1>
-					<h2 class="brand-tagline">Software/Web Developer</h2>
-				</div>
-				<div class="contact">
-					<h3 class="title">Contact</h3>	
-					<p class="phone-number"><a href="tel:+1 407 630 9951">+1 407 630 9951</a></p>
-					<p class="email"><a href="mailto:tr@tdan.co">tr@tdan.co</a></p>
-					<!--ul class="social-links">
-	     					<li class="twitter"><a href="https://twitter.com/tdanify"><i class="fa fa-twitter"></i></a></li>
-	     					<li class="github"><a href=""><i class="fa fa-github"></i></a></li>
-	     					<li class="linkedin"><a href=""><i class="fa fa-linkedin"></i></a></li>
-					</ul-->
-				</div>
+	<div id="sidebar" class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-4 center-flex">
+		<div class="pure-u-1 pure-u-md-3-4 pure-u-lg-2-3">
+			<img class="brand-logo pure-img" src="" />
+			<div class="header">
+				<h1 class="brand-name">Trung An</h1>
+				<h2 class="brand-tagline">Software/Web Developer</h2>
+			</div>
+			<div class="contact">
+				<h3 class="title">Contact</h3>	
+				<p class="phone-number"><a href="tel:+1 407 630 9951">+1 407 630 9951</a></p>
+				<p class="email"><a href="mailto:tr@tdan.co">tr@tdan.co</a></p>
+				<!--ul class="social-links">
+					<li class="twitter"><a href="https://twitter.com/tdanify"><i class="fa fa-twitter"></i></a></li>
+					<li class="github"><a href=""><i class="fa fa-github"></i></a></li>
+					<li class="linkedin"><a href=""><i class="fa fa-linkedin"></i></a></li>
+				</ul-->
 			</div>
 		</div>
 	</div>
 
-	<div id="main" class="pure-u-1 pure-u-md-2-3 pure-u-lg-3-4">
-		<div class="scrolling-content">
+	<div id="main" class="pure-u-1 pure-u-md-2-3 pure-u-lg-3-4 center-flex">
+		<div id="fullPage" class="scrolling-content">
 			{% for article in articles|reverse  %}
-			<div class="wrapper">
-				<div id="{{ article.slug }}" class="content-block">
+			<div class="wrapper section">
+				<div class="pure-u-1 pure-u-md-1-8 pure-u-lg-1-6"></div>
+				<div id="{{ article.slug }}" class="pure-u-1 pure-u-md-3-4 pure-u-lg-2-3">
 					{% if article.slug == 'about' %}
 						<img class="headshot pure-img circle-img center" src="/static/images/trung-an.jpg" />
 						<h2 class="hello center">Hello</h2>
@@ -45,4 +44,17 @@
 	</div>
 </div>
 
+{% endblock %}
+
+{% block footer %}
+<script>
+	<!-- GA -->
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-54580410-1', 'auto');
+	ga('send', 'pageview');
+</script>
 {% endblock %}

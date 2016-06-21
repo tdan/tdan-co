@@ -2,7 +2,7 @@ Title: Work & Education
 Date: 2016-05-30 01:06
 Slug: work-education
 
-### **IT / Web Developer**
+### **IT / Web Developer Contractor**
 #### D&D Unlimited Inc. | Sep 2013 to Current
 - Develop and maintain Wordpress templates for D&D 's main website and its subsidiaries: D&D Product Catalogs, Chao Cards, D&D USA Sourcing.
 - Develop and maintain Magento template for Teatastic, a D&D subsidiary for weight-loss tea 
