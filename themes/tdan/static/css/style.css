@@ -121,33 +121,11 @@ h2 {
     .slick-dots li.slick-active button {
       background: #555555; }
 
-.tooltip {
-  position: relative;
-  display: inline-block; }
-  .tooltip .tooltiptext {
-    position: absolute;
-    top: -60%;
-    bottom: auto;
-    right: 128%;
-    font-size: 0.85rem;
-    visibility: hidden;
-    width: 100px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    z-index: 1;
-    opacity: 0.9;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    border-radius: 6px;
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -ms-transition: opacity 1s;
-    transition: opacity 1s; }
-  .tooltip:hover .tooltiptext {
-    visibility: visible; }
+#fp-nav ul li .fp-tooltip {
+  color: #212121;
+  font-family: inherit;
+  top: -8px;
+  font-size: 0.95rem; }
 
 .circle-img {
   -webkit-border-radius: 50%;

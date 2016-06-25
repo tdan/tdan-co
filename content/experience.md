@@ -1,6 +1,6 @@
-Title: Work & Education
+Title: Experience
 Date: 2016-05-30 01:06
-Slug: work-education
+Slug: experience
 
 ### **IT / Web Developer Contractor**
 #### D&D Unlimited Inc. | Sep 2013 to Current
