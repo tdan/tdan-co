@@ -10,7 +10,8 @@ $(document).ready(function() {
 			hideScrollbars: false,
 			fadeScrollbars: false,
 			disableMouse: true
-		}
+		},
+		responsiveWidth: 800
 	});
 
 	$('#experience h2').prepend('<i class="fa fa-pencil" aria-hidden="true"></i>');
