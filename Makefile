@@ -42,6 +42,7 @@ help:
 	@echo '                                                                          '
 	@echo 'Usage:                                                                    '
 	@echo '   make html                           (re)generate the web site          '
+	@echo '   make html-sass                      (re)generate the web site with sass stylesheet'
 	@echo '   make clean                          remove the generated files         '
 	@echo '   make regenerate                     regenerate files upon modification '
 	@echo '   make publish                        generate using production settings '
@@ -62,6 +63,9 @@ help:
 	@echo '                                                                          '
 
 html:
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+
+html-sass:
 	sass themes/tdan/static/css/_style.scss > themes/tdan/static/css/style.css
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
